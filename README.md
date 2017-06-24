@@ -1,5 +1,5 @@
 # WDIE
-Well, If you are super-organized, prep and cook your meals, this isn't for you. 
+Well, If you are super-organized, prep and cook your meals, this probably isn't for you. 
 
 If you are a super-busy and a lazy student like me and eat most of your meals outside, one of those things you ask yourself, like a 100 times a day is, WHERE DO I EAT!?
 
