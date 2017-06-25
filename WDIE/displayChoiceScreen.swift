@@ -29,13 +29,11 @@ class displayChoiceScreen: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-//    @IBAction func goToMainScreen(_ sender: Any) {
-//                performSegue(withIdentifier: "displaySegue", sender: self)
-//        
-//    }
-    
-    
+
+    @IBAction func accpetAction(_ sender: Any) {
+        exit(0)
+        
+    }
     @IBAction func DeniedAction(_ sender: Any) {
         displayOption()
         self.viewDidLoad()
@@ -69,7 +67,7 @@ class displayChoiceScreen: UIViewController {
         
         var displayOptionString = optionsArray[randNumber]
         displayLabel.text = displayOptionString
-        acceptButton.isHidden = true
+        //acceptButton.isHidden = true
         
         
         
