@@ -13,6 +13,7 @@
 		E610128D1EFF176000CDFF71 /* WDIE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E610128B1EFF176000CDFF71 /* WDIE.xcdatamodeld */; };
 		E610128F1EFF176000CDFF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E610128E1EFF176000CDFF71 /* Assets.xcassets */; };
 		E61012921EFF176000CDFF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61012901EFF176000CDFF71 /* LaunchScreen.storyboard */; };
+		E610129A1EFF2E6100CDFF71 /* displayChoiceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61012991EFF2E6100CDFF71 /* displayChoiceScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E610128E1EFF176000CDFF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E61012911EFF176000CDFF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E61012931EFF176000CDFF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61012991EFF2E6100CDFF71 /* displayChoiceScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayChoiceScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E61012841EFF176000CDFF71 /* AppDelegate.swift */,
 				E61012861EFF176000CDFF71 /* ViewController.swift */,
+				E61012991EFF2E6100CDFF71 /* displayChoiceScreen.swift */,
 				E61012881EFF176000CDFF71 /* Main.storyboard */,
 				E610128E1EFF176000CDFF71 /* Assets.xcassets */,
 				E61012901EFF176000CDFF71 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61012871EFF176000CDFF71 /* ViewController.swift in Sources */,
+				E610129A1EFF2E6100CDFF71 /* displayChoiceScreen.swift in Sources */,
 				E610128D1EFF176000CDFF71 /* WDIE.xcdatamodeld in Sources */,
 				E61012851EFF176000CDFF71 /* AppDelegate.swift in Sources */,
 			);

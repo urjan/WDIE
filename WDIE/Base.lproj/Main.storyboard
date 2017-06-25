@@ -22,9 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-UO-W3v">
-                                <rect key="frame" x="133" y="136" width="108" height="30"/>
+                                <rect key="frame" x="127" y="136" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="WHAT DO I EAT"/>
+                                <state key="normal" title="WHERE  DO I EAT"/>
                                 <connections>
                                     <action selector="WhatButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zw6-nY-dYV"/>
                                 </connections>
@@ -39,11 +39,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-442" y="-109"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="7nD-BI-Xip">
             <objects>
-                <viewController restorationIdentifier="displayView" storyboardIdentifier="displayView" id="kB3-a3-77I" sceneMemberID="viewController">
+                <viewController restorationIdentifier="displayView" storyboardIdentifier="displayView" id="kB3-a3-77I" customClass="displayChoiceScreen" customModule="WDIE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pry-qJ-txa"/>
                         <viewControllerLayoutGuide type="bottom" id="T3q-0u-bxq"/>
@@ -52,8 +53,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tada!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-DH-51k">
-                                <rect key="frame" x="130" y="155" width="43" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUK-Es-FHK">
+                                <rect key="frame" x="107" y="360" width="104" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sounds  good! "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFE-Vd-0LG">
+                                <rect key="frame" x="74" y="413" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Nah, gimme something else?"/>
+                                <connections>
+                                    <action selector="DeniedAction:" destination="kB3-a3-77I" eventType="touchUpInside" id="RXE-wW-RWQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Does this sound nice?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezl-qy-nkK">
+                                <rect key="frame" x="75" y="155" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-L6-Rec">
+                                <rect key="frame" x="16" y="81" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="goToMainScreen:" destination="kB3-a3-77I" eventType="touchUpInside" id="udE-8y-9md"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41e-6F-Ng8">
+                                <rect key="frame" x="132" y="209" width="168" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -62,11 +90,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rLp-Bi-LSt"/>
+                    <navigationItem key="navigationItem" title="Title" id="yOD-HJ-m8R"/>
+                    <connections>
+                        <outlet property="acceptButton" destination="FUK-Es-FHK" id="FfG-qs-m6c"/>
+                        <outlet property="backButton" destination="Br6-L6-Rec" id="4W8-h5-dSM"/>
+                        <outlet property="deniedButton" destination="uFE-Vd-0LG" id="tle-yT-Vyh"/>
+                        <outlet property="displayLabel" destination="41e-6F-Ng8" id="llM-Qc-gd8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9t-R5-jRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375" y="128"/>
+            <point key="canvasLocation" x="287" y="-126"/>
         </scene>
     </scenes>
 </document>
