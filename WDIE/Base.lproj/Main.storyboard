@@ -52,10 +52,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-UO-W3v">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-UO-W3v">
                                 <rect key="frame" x="0.0" y="198" width="375" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Please tell me where to eat!">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Please tell me where to eat!">
                                             <attributes>
@@ -63,9 +64,6 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                </state>
-                                <state key="highlighted">
-                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
                                     <action selector="WhatButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zw6-nY-dYV"/>
@@ -77,7 +75,6 @@
                     <connections>
                         <outlet property="WhatButton" destination="A6g-UO-W3v" id="Npi-gk-UXZ"/>
                         <outlet property="addButton" destination="Hsu-Ji-pfV" id="xe6-VS-tJm"/>
-                        <outlet property="openPopOver" destination="X86-ah-ysg" id="TFf-FL-ALh"/>
                         <segue destination="kB3-a3-77I" kind="showDetail" identifier="displaySegue" id="6ey-c5-kwQ"/>
                         <segue destination="Pbb-q5-1jF" kind="popoverPresentation" identifier="popOverSegue" popoverAnchorView="X86-ah-ysg" id="hxq-cl-9Vl">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
